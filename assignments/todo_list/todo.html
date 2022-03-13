@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
     <head>
         <title>Todo List</title>
     </head>
@@ -6,8 +6,35 @@
         <div>
             <input type='text' name='todo_input'>
             <button type='submit'>Add Todo</button>
-            <div class='todos'></div>
+            <div class='todos'>
+            </div>
         </div>
     </body>
     <script src='./script.js'></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List Using API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Please Select From Completed/Pending Tasks</h1>
+        <div class="btnContainer">
+            <div class="completed">
+                <button id="bt1" onclick=compTask();>Completed</button>
+            </div>
+            <div class="pending">
+                <button id="bt2" onclick=pendTask();>Pending</button>
+            </div>
+        </div>
+        <div id = "res"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
